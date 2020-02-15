@@ -1,3 +1,5 @@
+//code for printing string and int seperated by 15 white spaces
+
 import java.util.Scanner;
 
 public class J5 {
@@ -9,7 +11,7 @@ public class J5 {
                 String s1=sc.next();
                 int x=sc.nextInt();
                 //Complete this line
-                System.out.println(s1+"\t\t\t"+x);
+                System.out.printf("%-15s%03d%n", s1, x);
             }
             System.out.println("================================");       
 
