@@ -1,31 +1,19 @@
-#include<stdio.h>
-#include<math.h>
-int main()
+//hello world
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
 {
-    int n,count=0,r,t,sum=0;
-    printf("Enter the number");
-    scanf("%d",&n);
-    t=n;//copy n to another variable
-    while(n>0)
-    {
-        n/=10;
-        count++;
-    }
-    n=t;// obtaining the original value of n
-    while(n>0)
-    {
-        r=n%10;
-        sum=sum+pow(r,count);   
-        printf("\n %d",sum);    
-        n/=10;
-    }
-    if(sum==t)//n becomes 0 so we are checking for t
-    {
-        printf("The number is armstrong");
-    }
-    else
-    {
-        printf("The number is not armstrong");
-    }
+	
+    char s[100];
+    scanf("%[^\n]%*c", &s);
+  	printf("Hello, World!\nWelcome to C programming.");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     return 0;
 }
+
+
+
