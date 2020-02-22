@@ -1,17 +1,19 @@
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 
 
 public class J18 {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
+        a=a.toLowerCase();
+        b=b.toLowerCase();
         if(a.length()!=b.length())
             return false;
         char c[]=a.toCharArray();
         char d[]=b.toCharArray();
-        Arrays.sort(c);
-        Arrays.sort(d);
+        java.util.Arrays.sort(c);
+        java.util.Arrays.sort(d);
         for(int i=0;i<a.length();i++)
             if(c[i]!=d[i])
                 return false;
